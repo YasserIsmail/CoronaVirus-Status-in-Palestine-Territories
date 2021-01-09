@@ -142,7 +142,7 @@
 
             </div>
             <!--  -->
-            <div class="text-left">
+            <div id="summary-info" class="text-left">
                 <h3 style="font-weight: normal;" class="mt-4 card-title">Summary info</h3>
             </div>
             <div class="row">
@@ -380,12 +380,14 @@
 
         function myFunction(media) {
             if (media.matches) { // If media query matches
+                document.getElementById('summary-info').innerHTML = '<h5 style="font-weight: normal;" class="mt-4 card-title">Summary info</h5>'
                 document.getElementById('tit').style.fontSize="18px"
-                document.getElementById('sele').innerHTML = '<h4 class="">Select the Feature on the Map</h4>'
+                document.getElementById('sele').innerHTML = '<h5 class="">Select the Feature on the Map</h5>'
                 my_map.setZoom(8)
                 document.getElementById('signture').innerHTML='<h5 style="display: block" id="summ-last" class=" text-left card-category">Last Data Upadate : </h5>'+'<h5 style="display: block" class="text-left card-category">by <a href="https://github.com/YasserIsmail">Yasser Ismail</a> © 2021 </h5>'
                 document.getElementById('summ-last').innerHTML += last.slice(0,10)
             }else{
+                document.getElementById('summary-info').innerHTML = '<h3 style="font-weight: normal;" class="mt-4 card-title">Summary info</h3>'
                 document.getElementById('sele').innerHTML = '<h3 class="">Select the Feature on the Map</h3>'
                 document.getElementById('tit').style.fontSize="40px"
                 my_map.setZoom(9)

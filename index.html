@@ -37,7 +37,7 @@
         <div style="width: 85%; margin-left: auto;margin-right: auto;" class="content pt-4">
             <div>
                 <div class="text-center">
-                    <h1 style="font-size: 40px;" class="pt-3">CoronaVirus Status in Palestine Territories</h1>
+                    <h1 id="tit" style="font-size: 40px;" class="pt-3">CoronaVirus Status in Palestine Territories</h1>
                 </div>
             </div>
             <!--  -->
@@ -380,10 +380,12 @@
 
         function myFunction(media) {
             if (media.matches) { // If media query matches
+                document.getElementById('tit').style.fontSize="32px"
                 my_map.setZoom(8)
                 document.getElementById('signture').innerHTML='<h5 style="display: block" id="summ-last" class=" text-left card-category">Last Data Upadate : </h5>'+'<h5 style="display: block" class="text-left card-category">by <a href="https://github.com/YasserIsmail">Yasser Ismail</a> © 2021 </h5>'
                 document.getElementById('summ-last').innerHTML += last.slice(0,10)
             }else{
+                document.getElementById('tit').style.fontSize="40px"
                 my_map.setZoom(9)
                 document.getElementById('signture').innerHTML='<h5 style="display: inline;" id="summ-last" class="card-category">Last Data Upadate : </h5>'+'<h5 style="display: inline; float: right;" class="card-category">by <a href="https://github.com/YasserIsmail">Yasser Ismail</a> © 2021 </h5>'
                 document.getElementById('summ-last').innerHTML += last.slice(0,10)

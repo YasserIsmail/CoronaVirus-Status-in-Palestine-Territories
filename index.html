@@ -63,7 +63,7 @@
             <div class="row p-0">
                 <div style="margin-top: auto; margin-bottom: auto;" class="col-xl-6 pt-1 pl-0 pr-0">
                     <div class="col-sm-12">
-                        <div class="text-center">
+                        <div id="sele" class="text-center">
                             <h3 class="">Select the Feature on the Map</h3>
                         </div>
                     </div>    
@@ -381,10 +381,12 @@
         function myFunction(media) {
             if (media.matches) { // If media query matches
                 document.getElementById('tit').style.fontSize="18px"
+                document.getElementById('sele').innerHTML = '<h4 class="">Select the Feature on the Map</h4>'
                 my_map.setZoom(8)
                 document.getElementById('signture').innerHTML='<h5 style="display: block" id="summ-last" class=" text-left card-category">Last Data Upadate : </h5>'+'<h5 style="display: block" class="text-left card-category">by <a href="https://github.com/YasserIsmail">Yasser Ismail</a> © 2021 </h5>'
                 document.getElementById('summ-last').innerHTML += last.slice(0,10)
             }else{
+                document.getElementById('sele').innerHTML = '<h3 class="">Select the Feature on the Map</h3>'
                 document.getElementById('tit').style.fontSize="40px"
                 my_map.setZoom(9)
                 document.getElementById('signture').innerHTML='<h5 style="display: inline;" id="summ-last" class="card-category">Last Data Upadate : </h5>'+'<h5 style="display: inline; float: right;" class="card-category">by <a href="https://github.com/YasserIsmail">Yasser Ismail</a> © 2021 </h5>'

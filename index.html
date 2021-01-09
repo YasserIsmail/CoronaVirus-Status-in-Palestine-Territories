@@ -380,10 +380,11 @@
 
         function myFunction(media) {
             if (media.matches) { // If media query matches
-                my_map.zoom=6
+                mymap.setZoom(6)
                 document.getElementById('signture').innerHTML='<h5 style="display: block" id="summ-last" class=" text-left card-category">Last Data Upadate : </h5>'+'<h5 style="display: block" class="text-left card-category">by <a href="https://github.com/YasserIsmail">Yasser Ismail</a> © 2021 </h5>'
                 document.getElementById('summ-last').innerHTML += last.slice(0,10)
             }else{
+                mymap.setZoom(9)
                 document.getElementById('signture').innerHTML='<h5 style="display: inline;" id="summ-last" class="card-category">Last Data Upadate : </h5>'+'<h5 style="display: inline; float: right;" class="card-category">by <a href="https://github.com/YasserIsmail">Yasser Ismail</a> © 2021 </h5>'
                 document.getElementById('summ-last').innerHTML += last.slice(0,10)
             }

@@ -14,7 +14,7 @@
 <br />
 
 ![image of my dashboard](img/dashboard.jpg)
+<br />
 
-<br />
+
 for see it [CoronaVirus Status](https://coronavirusinps.netlify.app)
-<br />

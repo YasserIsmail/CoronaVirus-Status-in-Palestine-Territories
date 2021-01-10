@@ -7,6 +7,6 @@
 - the dashboard is a Responsive design in which can be viewed using many different devices
 - clicking over the feature shows the Name governorate as a popup and show more governorate corona virus data's in the Neighboring boxes
 ## summary
-### I have designed and built a dashboard using Bootstrap,Leaflet.js(the map creator),Chart.js and JS AJAX(to read data from a web server).
+### I have designed and built a dashboard using `Bootstrap` , `Leaflet.js` (the map creator), `Chart.js` and `JS AJAX` (to read data from a web server).
 ![image of my dashboard](img/dashboard.jpg)
 #### for see it [CoronaVirus Status](https://coronavirusinps.netlify.app)

@@ -11,7 +11,7 @@
 
 ## Summary
 #### I have designed and built a dashboard using `Bootstrap` , `Leaflet.js` (the map creator), `Chart.js` and `JS AJAX` (to read data from a web server).
-
+\
 
 ![image of my dashboard](img/dashboard.jpg)
 

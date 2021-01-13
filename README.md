@@ -16,6 +16,6 @@
 ![image of my dashboard](img/dashboard.jpg)
 <br />
 
-
+#### please read the guide before use
 ## for see it [CoronaVirus Status](https://coronavirusinps.netlify.app)
 **Yasser Ismail © 2021**
